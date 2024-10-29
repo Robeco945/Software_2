@@ -1,3 +1,4 @@
+
 class Elevator:
     def __init__(self, floor, top, bottom):
         self.top = top
@@ -21,7 +22,6 @@ class Building:
         self.bottom_floor = bottom_floor
         self.noe = number_of_elevators
         self.elevators = []
-
         for i in range(number_of_elevators):
             self.elevators.append(Elevator(0, top_floor, bottom_floor))
     def run_elevators(self, floor, noe):
